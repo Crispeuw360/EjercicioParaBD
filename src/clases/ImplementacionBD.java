@@ -123,7 +123,7 @@ public class ImplementacionBD {
 			// Leemos de uno en uno
 			while (rs.next()) {
 				usuario = new Usuario();
-				usuario.setNombre(rs.getString("usuario"));
+				usuario.setNombre(rs.getString("nombre"));
 				usuario.setContrasena(rs.getString("contrasena"));
 				equipos.put(usuario.getNombre(), usuario);
 			}
